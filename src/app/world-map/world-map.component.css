@@ -1,0 +1,5 @@
+.card-shape{
+	padding: 6rem;
+	height: 300px;
+	background: linear-gradient(to bottom, #0099cc 0%, #ccffff 100%);
+}

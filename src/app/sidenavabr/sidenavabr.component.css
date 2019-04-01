@@ -1,0 +1,45 @@
+.sideNav{
+  position: fixed;
+  width: 14.6%;
+  background-color: #b3d7ff;
+  height: 100%;
+  /*z-index: 1000;*/
+}
+.sideNav ul{
+	list-style: none;
+  padding-left: 0;
+  overflow-y: auto;
+  height: 80vh;
+}
+.sideNav li{
+  font-size: 14px;
+  padding: 10px 0 15px 5px;
+  margin: 5px 8px;
+  color: rgba(0, 0, 0, 0.85);
+}
+.sideNav li a{
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+}
+.sideNav li i{
+  font-size: 26px;
+  vertical-align: sub;
+  min-width: 30px;
+  text-align: center;
+}
+/*.sideNav .faIcon{
+  margin: 0px 10px;
+}*/
+.sideNav li.activeMenu{
+  background-color: #ebebeb;
+}
+.item.active{
+  background-color: white;
+  margin:0 !important;
+  padding: 1rem !important;
+}
+.item{
+    margin: 0 !important;
+    padding: 1rem !important;
+}

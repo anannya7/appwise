@@ -1,0 +1,14 @@
+<div class="sideNav">
+  <ul class="pt-1" id="menu" >
+    <li class="item active" [ngClass]="{'active': selectedValue == 'highlights'}">
+      <a class="col-9 pl-1" (click)="pickTab('highlights')" > Highlights</a>
+    </li>
+    <li class="item" [ngClass]="{'active': selectedValue == 'activity_feed'}">
+    	<a class="col-9 pl-1" (click)="pickTab('activity_feed')" >Activity Feed</a>    	
+    </li>
+    <li class="item" [ngClass]="{'active': selectedValue == 'world_map'}">
+    	<a class="col-9 pl-1" (click)="pickTab('world_map')" >World Map</a>
+    	
+    </li>
+  </ul>  
+</div> 

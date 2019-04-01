@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-light sticky-top">
+  <a class="navbar-brand" href="#">
+    <img src="../assets/image/appwise.png" width="60" height="60" class="d-inline-block align-top" alt="">
+    <label class="text-danger mt-3 ml-2 class-label">{{ selectedTab.replace('_', ' ') }}</label>
+  </a>
+</nav>
+<div class="row">
+	<div class="col-2">
+		<app-sidenavabr (selectTab)="picSelectedTab($event)"></app-sidenavabr>		
+	</div>
+	<div class="col-10">
+		<app-highlights *ngIf="selectedTab == 'highlights'"></app-highlights>		
+		<app-activity-feeds *ngIf="selectedTab == 'activity_feed'"></app-activity-feeds>
+		<app-world-map *ngIf="selectedTab == 'world_map'"></app-world-map>
+	</div>
+	
+</div>  

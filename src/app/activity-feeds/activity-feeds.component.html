@@ -1,0 +1,17 @@
+<div class="row px-5 mt-4">
+	<div class="col-12 ">
+		<div class="row mt-4">
+			<div class="col-4 my-3" *ngFor="let news of activity_list">
+				<div class="card-shape text-center border shadow" >
+					<span class="title-change">{{ news.title}}</span><br>
+					<label class="font-weight-bold">Published At:</label>
+					<span>{{ news.publishedAt  | date:'dd/MM/yyyy - h:mm a'}}</span>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
